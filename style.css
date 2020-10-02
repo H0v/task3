@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fredoka One", cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/01/coliseum-309629_1280.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.frags {
+  width: 500px;
+  height: 600px;
+  border-radius: 40px;
+  background-color: rgba(143, 143, 143, 0.5);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.frags p {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.list {
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  list-style: none;
+  text-align: center;
+}
+.list li {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: rgba(82, 82, 82, 0.5);
+}
+.cesar {
+  display: none;
+  height: 100%;
+}
+.button {
+  font-weight: 900;
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #ffefb3;
+  color: #880000;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+  color: black;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 550px) {
+  .frags {
+    width: 300px;
+  }
+  .frags p {
+    font-size: 30px;
+  }
+  .list {
+    font-size: 15px;
+  }
+}
